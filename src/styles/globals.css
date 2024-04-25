@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('./fonts.css');
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.95;
+  height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  filter: blur(0.5px);
+}
+
+.login-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 1em; /* Distância de 1em entre o h1 e o h2 */
+  color: #e32a13;
+  position: absolute;
+  top: -10em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ink {
+  font-size: 4em;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 500;
+}
+
+.verse {
+  font-size: 2.5em;
+  font-family: "Rock Salt", cursive;
+  color: #f46036;
+}
+
+.cliente {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  top: -2.8em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-group {
+  position: relative;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  padding: 0.5em;
+}
+
+.input-field {
+  font-family: 'Poppins', sans-serif;
+  font-weight: BOLD;
+  font-size: 14px;
+  color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 0.5em;
+  width: 100%;
+  max-width: 330px; 
+}
+
+.button-group {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding-top: 1.8em;
+}
+
+.login-button,
+.login-apple,
+.login-google {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  margin-top: 0.7em; 
+  width: 325px; 
+  text-align: center; 
+  opacity: 0.90;
+}
+
+.login-button {
+  background-color: #e32a13;
+  color: white; 
+  font-weight: 500;
+}
+
+.login-apple,
+.login-google {
+  background-color: #f46036; 
+  color: white; 
+  font-size: 18px; 
+  padding: 0.6em;
+  width: 325px; 
+}
+
+.login-esqueceu-senha {
+  color: white; 
+  font-size: 16px; 
+  font-weight: 600;
+  margin-top: 1.5em; 
+}
+
+.login-criar-conta {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  position: fixed;
+  bottom: 0px;
+  padding: 1.3em;
+  left: 0;
+  right: 0; 
+  z-index: 999;
+  background-color: #303030;
+  width: 100%; 
+  text-align: center; 
+}
+
+
+
+
